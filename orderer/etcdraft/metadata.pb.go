@@ -125,8 +125,8 @@ func (m *ClusterMetadata) GetActiveNodes() []uint64 {
 }
 
 func init() {
-	proto.RegisterType((*BlockMetadata)(nil), "etcdraft.BlockMetadata")
-	proto.RegisterType((*ClusterMetadata)(nil), "etcdraft.ClusterMetadata")
+	proto.RegisterType((*BlockMetadata)(nil), "sdk.etcdraft.BlockMetadata")
+	proto.RegisterType((*ClusterMetadata)(nil), "sdk.etcdraft.ClusterMetadata")
 }
 
 func init() { proto.RegisterFile("orderer/etcdraft/metadata.proto", fileDescriptor_6d0323e5051228ea) }

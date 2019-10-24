@@ -167,8 +167,8 @@ func (*StateData) XXX_OneofWrappers() []interface{} {
 }
 
 func init() {
-	proto.RegisterType((*StateMetadata)(nil), "lifecycle.StateMetadata")
-	proto.RegisterType((*StateData)(nil), "lifecycle.StateData")
+	proto.RegisterType((*StateMetadata)(nil), "sdk.lifecycle.StateMetadata")
+	proto.RegisterType((*StateData)(nil), "sdk.lifecycle.StateData")
 }
 
 func init() { proto.RegisterFile("peer/lifecycle/db.proto", fileDescriptor_389b29a8aaf0aebb) }

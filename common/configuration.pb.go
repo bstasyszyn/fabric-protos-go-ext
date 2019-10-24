@@ -291,13 +291,13 @@ func (m *Capability) XXX_DiscardUnknown() {
 var xxx_messageInfo_Capability proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*HashingAlgorithm)(nil), "common.HashingAlgorithm")
-	proto.RegisterType((*BlockDataHashingStructure)(nil), "common.BlockDataHashingStructure")
-	proto.RegisterType((*OrdererAddresses)(nil), "common.OrdererAddresses")
-	proto.RegisterType((*Consortium)(nil), "common.Consortium")
-	proto.RegisterType((*Capabilities)(nil), "common.Capabilities")
-	proto.RegisterMapType((map[string]*Capability)(nil), "common.Capabilities.CapabilitiesEntry")
-	proto.RegisterType((*Capability)(nil), "common.Capability")
+	proto.RegisterType((*HashingAlgorithm)(nil), "sdk.common.HashingAlgorithm")
+	proto.RegisterType((*BlockDataHashingStructure)(nil), "sdk.common.BlockDataHashingStructure")
+	proto.RegisterType((*OrdererAddresses)(nil), "sdk.common.OrdererAddresses")
+	proto.RegisterType((*Consortium)(nil), "sdk.common.Consortium")
+	proto.RegisterType((*Capabilities)(nil), "sdk.common.Capabilities")
+	proto.RegisterMapType((map[string]*Capability)(nil), "sdk.common.Capabilities.CapabilitiesEntry")
+	proto.RegisterType((*Capability)(nil), "sdk.common.Capability")
 }
 
 func init() { proto.RegisterFile("common/configuration.proto", fileDescriptor_cba1ec2883858369) }

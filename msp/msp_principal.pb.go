@@ -401,14 +401,14 @@ func (m *CombinedPrincipal) GetPrincipals() []*MSPPrincipal {
 }
 
 func init() {
-	proto.RegisterEnum("common.MSPPrincipal_Classification", MSPPrincipal_Classification_name, MSPPrincipal_Classification_value)
-	proto.RegisterEnum("common.MSPRole_MSPRoleType", MSPRole_MSPRoleType_name, MSPRole_MSPRoleType_value)
-	proto.RegisterEnum("common.MSPIdentityAnonymity_MSPIdentityAnonymityType", MSPIdentityAnonymity_MSPIdentityAnonymityType_name, MSPIdentityAnonymity_MSPIdentityAnonymityType_value)
-	proto.RegisterType((*MSPPrincipal)(nil), "common.MSPPrincipal")
-	proto.RegisterType((*OrganizationUnit)(nil), "common.OrganizationUnit")
-	proto.RegisterType((*MSPRole)(nil), "common.MSPRole")
-	proto.RegisterType((*MSPIdentityAnonymity)(nil), "common.MSPIdentityAnonymity")
-	proto.RegisterType((*CombinedPrincipal)(nil), "common.CombinedPrincipal")
+	proto.RegisterEnum("sdk.common.MSPPrincipal_Classification", MSPPrincipal_Classification_name, MSPPrincipal_Classification_value)
+	proto.RegisterEnum("sdk.common.MSPRole_MSPRoleType", MSPRole_MSPRoleType_name, MSPRole_MSPRoleType_value)
+	proto.RegisterEnum("sdk.common.MSPIdentityAnonymity_MSPIdentityAnonymityType", MSPIdentityAnonymity_MSPIdentityAnonymityType_name, MSPIdentityAnonymity_MSPIdentityAnonymityType_value)
+	proto.RegisterType((*MSPPrincipal)(nil), "sdk.common.MSPPrincipal")
+	proto.RegisterType((*OrganizationUnit)(nil), "sdk.common.OrganizationUnit")
+	proto.RegisterType((*MSPRole)(nil), "sdk.common.MSPRole")
+	proto.RegisterType((*MSPIdentityAnonymity)(nil), "sdk.common.MSPIdentityAnonymity")
+	proto.RegisterType((*CombinedPrincipal)(nil), "sdk.common.CombinedPrincipal")
 }
 
 func init() { proto.RegisterFile("msp/msp_principal.proto", fileDescriptor_82e08b7ead29bd48) }

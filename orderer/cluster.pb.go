@@ -349,11 +349,11 @@ func (m *SubmitResponse) GetInfo() string {
 }
 
 func init() {
-	proto.RegisterType((*StepRequest)(nil), "orderer.StepRequest")
-	proto.RegisterType((*StepResponse)(nil), "orderer.StepResponse")
-	proto.RegisterType((*ConsensusRequest)(nil), "orderer.ConsensusRequest")
-	proto.RegisterType((*SubmitRequest)(nil), "orderer.SubmitRequest")
-	proto.RegisterType((*SubmitResponse)(nil), "orderer.SubmitResponse")
+	proto.RegisterType((*StepRequest)(nil), "sdk.orderer.StepRequest")
+	proto.RegisterType((*StepResponse)(nil), "sdk.orderer.StepResponse")
+	proto.RegisterType((*ConsensusRequest)(nil), "sdk.orderer.ConsensusRequest")
+	proto.RegisterType((*SubmitRequest)(nil), "sdk.orderer.SubmitRequest")
+	proto.RegisterType((*SubmitResponse)(nil), "sdk.orderer.SubmitResponse")
 }
 
 func init() { proto.RegisterFile("orderer/cluster.proto", fileDescriptor_e3b50707fd3a71f2) }

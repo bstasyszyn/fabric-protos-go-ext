@@ -81,8 +81,8 @@ func (m *TxPvtReadWriteSetWithConfigInfo) GetCollectionConfigs() map[string]*com
 }
 
 func init() {
-	proto.RegisterType((*TxPvtReadWriteSetWithConfigInfo)(nil), "transientstore.TxPvtReadWriteSetWithConfigInfo")
-	proto.RegisterMapType((map[string]*common.CollectionConfigPackage)(nil), "transientstore.TxPvtReadWriteSetWithConfigInfo.CollectionConfigsEntry")
+	proto.RegisterType((*TxPvtReadWriteSetWithConfigInfo)(nil), "sdk.transientstore.TxPvtReadWriteSetWithConfigInfo")
+	proto.RegisterMapType((map[string]*common.CollectionConfigPackage)(nil), "sdk.transientstore.TxPvtReadWriteSetWithConfigInfo.CollectionConfigsEntry")
 }
 
 func init() {

@@ -365,12 +365,12 @@ func (m *KafkaMetadata) GetLastResubmittedConfigOffset() int64 {
 }
 
 func init() {
-	proto.RegisterEnum("orderer.KafkaMessageRegular_Class", KafkaMessageRegular_Class_name, KafkaMessageRegular_Class_value)
-	proto.RegisterType((*KafkaMessage)(nil), "orderer.KafkaMessage")
-	proto.RegisterType((*KafkaMessageRegular)(nil), "orderer.KafkaMessageRegular")
-	proto.RegisterType((*KafkaMessageTimeToCut)(nil), "orderer.KafkaMessageTimeToCut")
-	proto.RegisterType((*KafkaMessageConnect)(nil), "orderer.KafkaMessageConnect")
-	proto.RegisterType((*KafkaMetadata)(nil), "orderer.KafkaMetadata")
+	proto.RegisterEnum("sdk.orderer.KafkaMessageRegular_Class", KafkaMessageRegular_Class_name, KafkaMessageRegular_Class_value)
+	proto.RegisterType((*KafkaMessage)(nil), "sdk.orderer.KafkaMessage")
+	proto.RegisterType((*KafkaMessageRegular)(nil), "sdk.orderer.KafkaMessageRegular")
+	proto.RegisterType((*KafkaMessageTimeToCut)(nil), "sdk.orderer.KafkaMessageTimeToCut")
+	proto.RegisterType((*KafkaMessageConnect)(nil), "sdk.orderer.KafkaMessageConnect")
+	proto.RegisterType((*KafkaMetadata)(nil), "sdk.orderer.KafkaMetadata")
 }
 
 func init() { proto.RegisterFile("orderer/kafka.proto", fileDescriptor_44ca1a6a801d36ec) }

@@ -758,19 +758,19 @@ func (m *QueryReadsMerkleSummary) GetMaxLevelHashes() [][]byte {
 }
 
 func init() {
-	proto.RegisterType((*KVRWSet)(nil), "kvrwset.KVRWSet")
-	proto.RegisterType((*HashedRWSet)(nil), "kvrwset.HashedRWSet")
-	proto.RegisterType((*KVRead)(nil), "kvrwset.KVRead")
-	proto.RegisterType((*KVWrite)(nil), "kvrwset.KVWrite")
-	proto.RegisterType((*KVMetadataWrite)(nil), "kvrwset.KVMetadataWrite")
-	proto.RegisterType((*KVReadHash)(nil), "kvrwset.KVReadHash")
-	proto.RegisterType((*KVWriteHash)(nil), "kvrwset.KVWriteHash")
-	proto.RegisterType((*KVMetadataWriteHash)(nil), "kvrwset.KVMetadataWriteHash")
-	proto.RegisterType((*KVMetadataEntry)(nil), "kvrwset.KVMetadataEntry")
-	proto.RegisterType((*Version)(nil), "kvrwset.Version")
-	proto.RegisterType((*RangeQueryInfo)(nil), "kvrwset.RangeQueryInfo")
-	proto.RegisterType((*QueryReads)(nil), "kvrwset.QueryReads")
-	proto.RegisterType((*QueryReadsMerkleSummary)(nil), "kvrwset.QueryReadsMerkleSummary")
+	proto.RegisterType((*KVRWSet)(nil), "sdk.kvrwset.KVRWSet")
+	proto.RegisterType((*HashedRWSet)(nil), "sdk.kvrwset.HashedRWSet")
+	proto.RegisterType((*KVRead)(nil), "sdk.kvrwset.KVRead")
+	proto.RegisterType((*KVWrite)(nil), "sdk.kvrwset.KVWrite")
+	proto.RegisterType((*KVMetadataWrite)(nil), "sdk.kvrwset.KVMetadataWrite")
+	proto.RegisterType((*KVReadHash)(nil), "sdk.kvrwset.KVReadHash")
+	proto.RegisterType((*KVWriteHash)(nil), "sdk.kvrwset.KVWriteHash")
+	proto.RegisterType((*KVMetadataWriteHash)(nil), "sdk.kvrwset.KVMetadataWriteHash")
+	proto.RegisterType((*KVMetadataEntry)(nil), "sdk.kvrwset.KVMetadataEntry")
+	proto.RegisterType((*Version)(nil), "sdk.kvrwset.Version")
+	proto.RegisterType((*RangeQueryInfo)(nil), "sdk.kvrwset.RangeQueryInfo")
+	proto.RegisterType((*QueryReads)(nil), "sdk.kvrwset.QueryReads")
+	proto.RegisterType((*QueryReadsMerkleSummary)(nil), "sdk.kvrwset.QueryReadsMerkleSummary")
 }
 
 func init() {

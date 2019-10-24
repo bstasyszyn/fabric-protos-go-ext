@@ -416,13 +416,13 @@ func (*DeliverResponse) XXX_OneofWrappers() []interface{} {
 }
 
 func init() {
-	proto.RegisterType((*FilteredBlock)(nil), "protos.FilteredBlock")
-	proto.RegisterType((*FilteredTransaction)(nil), "protos.FilteredTransaction")
-	proto.RegisterType((*FilteredTransactionActions)(nil), "protos.FilteredTransactionActions")
-	proto.RegisterType((*FilteredChaincodeAction)(nil), "protos.FilteredChaincodeAction")
-	proto.RegisterType((*BlockAndPrivateData)(nil), "protos.BlockAndPrivateData")
-	proto.RegisterMapType((map[uint64]*rwset.TxPvtReadWriteSet)(nil), "protos.BlockAndPrivateData.PrivateDataMapEntry")
-	proto.RegisterType((*DeliverResponse)(nil), "protos.DeliverResponse")
+	proto.RegisterType((*FilteredBlock)(nil), "sdk.protos.FilteredBlock")
+	proto.RegisterType((*FilteredTransaction)(nil), "sdk.protos.FilteredTransaction")
+	proto.RegisterType((*FilteredTransactionActions)(nil), "sdk.protos.FilteredTransactionActions")
+	proto.RegisterType((*FilteredChaincodeAction)(nil), "sdk.protos.FilteredChaincodeAction")
+	proto.RegisterType((*BlockAndPrivateData)(nil), "sdk.protos.BlockAndPrivateData")
+	proto.RegisterMapType((map[uint64]*rwset.TxPvtReadWriteSet)(nil), "sdk.protos.BlockAndPrivateData.PrivateDataMapEntry")
+	proto.RegisterType((*DeliverResponse)(nil), "sdk.protos.DeliverResponse")
 }
 
 func init() { proto.RegisterFile("peer/events.proto", fileDescriptor_5eedcc5fab2714e6) }

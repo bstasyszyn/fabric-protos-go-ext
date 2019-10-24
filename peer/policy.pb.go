@@ -104,7 +104,7 @@ func (*ApplicationPolicy) XXX_OneofWrappers() []interface{} {
 }
 
 func init() {
-	proto.RegisterType((*ApplicationPolicy)(nil), "protos.ApplicationPolicy")
+	proto.RegisterType((*ApplicationPolicy)(nil), "sdk.protos.ApplicationPolicy")
 }
 
 func init() { proto.RegisterFile("peer/policy.proto", fileDescriptor_17aa1dd1e55c3e19) }

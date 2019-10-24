@@ -208,9 +208,9 @@ func (m *Options) GetSnapshotIntervalSize() uint32 {
 }
 
 func init() {
-	proto.RegisterType((*ConfigMetadata)(nil), "etcdraft.ConfigMetadata")
-	proto.RegisterType((*Consenter)(nil), "etcdraft.Consenter")
-	proto.RegisterType((*Options)(nil), "etcdraft.Options")
+	proto.RegisterType((*ConfigMetadata)(nil), "sdk.etcdraft.ConfigMetadata")
+	proto.RegisterType((*Consenter)(nil), "sdk.etcdraft.Consenter")
+	proto.RegisterType((*Options)(nil), "sdk.etcdraft.Options")
 }
 
 func init() {

@@ -701,15 +701,15 @@ func (m *FabricNodeOUs) GetOrdererOuIdentifier() *FabricOUIdentifier {
 }
 
 func init() {
-	proto.RegisterType((*MSPConfig)(nil), "msp.MSPConfig")
-	proto.RegisterType((*FabricMSPConfig)(nil), "msp.FabricMSPConfig")
-	proto.RegisterType((*FabricCryptoConfig)(nil), "msp.FabricCryptoConfig")
-	proto.RegisterType((*IdemixMSPConfig)(nil), "msp.IdemixMSPConfig")
-	proto.RegisterType((*IdemixMSPSignerConfig)(nil), "msp.IdemixMSPSignerConfig")
-	proto.RegisterType((*SigningIdentityInfo)(nil), "msp.SigningIdentityInfo")
-	proto.RegisterType((*KeyInfo)(nil), "msp.KeyInfo")
-	proto.RegisterType((*FabricOUIdentifier)(nil), "msp.FabricOUIdentifier")
-	proto.RegisterType((*FabricNodeOUs)(nil), "msp.FabricNodeOUs")
+	proto.RegisterType((*MSPConfig)(nil), "sdk.msp.MSPConfig")
+	proto.RegisterType((*FabricMSPConfig)(nil), "sdk.msp.FabricMSPConfig")
+	proto.RegisterType((*FabricCryptoConfig)(nil), "sdk.msp.FabricCryptoConfig")
+	proto.RegisterType((*IdemixMSPConfig)(nil), "sdk.msp.IdemixMSPConfig")
+	proto.RegisterType((*IdemixMSPSignerConfig)(nil), "sdk.msp.IdemixMSPSignerConfig")
+	proto.RegisterType((*SigningIdentityInfo)(nil), "sdk.msp.SigningIdentityInfo")
+	proto.RegisterType((*KeyInfo)(nil), "sdk.msp.KeyInfo")
+	proto.RegisterType((*FabricOUIdentifier)(nil), "sdk.msp.FabricOUIdentifier")
+	proto.RegisterType((*FabricNodeOUs)(nil), "sdk.msp.FabricNodeOUs")
 }
 
 func init() { proto.RegisterFile("msp/msp_config.proto", fileDescriptor_9c34771f529d9d1a) }

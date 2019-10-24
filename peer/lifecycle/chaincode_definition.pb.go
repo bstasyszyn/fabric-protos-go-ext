@@ -127,8 +127,8 @@ func (m *ChaincodeValidationInfo) GetValidationParameter() []byte {
 }
 
 func init() {
-	proto.RegisterType((*ChaincodeEndorsementInfo)(nil), "lifecycle.ChaincodeEndorsementInfo")
-	proto.RegisterType((*ChaincodeValidationInfo)(nil), "lifecycle.ChaincodeValidationInfo")
+	proto.RegisterType((*ChaincodeEndorsementInfo)(nil), "sdk.lifecycle.ChaincodeEndorsementInfo")
+	proto.RegisterType((*ChaincodeValidationInfo)(nil), "sdk.lifecycle.ChaincodeValidationInfo")
 }
 
 func init() {
