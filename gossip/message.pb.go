@@ -949,6 +949,7 @@ type ConnEstablish struct {
 	PkiId                []byte   `protobuf:"bytes,1,opt,name=pki_id,json=pkiId,proto3" json:"pki_id,omitempty"`
 	Identity             []byte   `protobuf:"bytes,2,opt,name=identity,proto3" json:"identity,omitempty"`
 	TlsCertHash          []byte   `protobuf:"bytes,3,opt,name=tls_cert_hash,json=tlsCertHash,proto3" json:"tls_cert_hash,omitempty"`
+	Probe                bool     `protobuf:"varint,4,opt,name=probe,proto3" json:"probe,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
@@ -998,6 +999,13 @@ func (m *ConnEstablish) GetTlsCertHash() []byte {
 		return m.TlsCertHash
 	}
 	return nil
+}
+
+func (m *ConnEstablish) GetProbe() bool {
+	if m != nil {
+		return m.Probe
+	}
+	return false
 }
 
 // PeerIdentity defines the identity of the peer
